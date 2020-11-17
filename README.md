@@ -15,9 +15,9 @@ $ cd MERN-Docker
 $ docker-compose up
 ```
 
-3. Open browser and goto <localhost:80>
+3. Open browser and goto <http://localhost:80>
 
-4. (Optional) You can access API by opening the browser and goto <localhost:4000>
+4. (Optional) You can access API by opening the browser and goto <http://localhost:4000>
 
 5. (Optional) You can access database content by accessing `mongodb://localhost:27017` using a MongoDB client (e.g. [Mongo Compass](https://www.mongodb.com/products/compass))
 
