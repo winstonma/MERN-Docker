@@ -2,9 +2,7 @@ const express = require('express')
 var router = express.Router()
 var ObjectID = require('mongoose').Types.ObjectId
 
-
 var { PostMessage } = require('../models/postMessage')
-
 
 router.get('/', (req, res) => {
     PostMessage.find((err, docs) => {
@@ -34,7 +32,7 @@ router.put('/:id', (req, res) => {
         message: req.body.message
     }
 
-    PostMessage.findByIdAndUpdate(req.params.id, { $set: updatedRecord },{new:true}, (err, docs) => {
+    PostMessage.findByIdAndUpdate(req.params.id, { $set: updatedRecord }, { new: true }, (err, docs) => {
         if (!err) res.send(docs)
         else console.log('Error while updating a record : ' + JSON.stringify(err, undefined, 2))
     })
@@ -49,6 +47,5 @@ router.delete('/:id', (req, res) => {
         else console.log('Error while deleting a record : ' + JSON.stringify(err, undefined, 2))
     })
 })
-
 
 module.exports = router
