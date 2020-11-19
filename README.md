@@ -11,15 +11,17 @@ In this demo, I just created the docker wrapper for the application. The code is
 
 1. Install [Docker](https://docs.docker.com/get-docker/) 
 
-2. Run the follow command in git
+2. Run the follow command in command prompt
 ```
 $ git clone https://github.com/winstonma/MERN-Docker.git
 $ cd MERN-Docker
 $ docker-compose up
 ```
 
-3. Open browser and goto `localhost:80`
+3. Open browser and goto <http://localhost:80>
 
-4. (Optional) You can access API by opening the browser and goto `localhost:4000`
+4. (Optional) You can access API by opening the browser and goto <http://localhost:4000>
 
 5. (Optional) You can access database content by accessing `mongodb://localhost:27017` using a MongoDB client (e.g. [Mongo Compass](https://www.mongodb.com/products/compass))
+
+Please execute `docker-compose down` in the command prompt to stop the demo
