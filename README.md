@@ -4,6 +4,9 @@ This is a boilerplate on the dockerize MERN stack, which includes a React fronte
 
 In this demo, I just created the docker wrapper for the application. The code is based on the [MERN-Stack-CRUD](https://github.com/CodAffection/MERN-Stack-CRUD) by CodAffection. The application demonstrates the end-to-end CRUD (create, read, update, and delete) functionality.
 
+## Demo
+![Demo](Demo.gif)
+
 ## Run the demo
 
 1. Install [Docker](https://docs.docker.com/get-docker/) 
