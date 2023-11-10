@@ -1,5 +1,5 @@
 # build environment
-FROM node:lts-slim as build
+FROM node:14-slim as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
